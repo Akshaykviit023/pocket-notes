@@ -20,6 +20,9 @@ const CreateModal = ({ sendDataToParent }) => {
 
         sendDataToParent(false);
     }
+
+    const isFormValid = groupName && selectedColor;
+
   return (
         <div className='absolute rounded-md -translate-x-2/4 -translate-y-2/4 left-2/4 top-2/4 py-8 px-12 z-20 bg-white max-md:px-6 max-md:py-6 max-md:w-[80%]'>
             <h1 className='text-3xl font-medium max-md:text-lg'>Create New Notes group</h1>
@@ -40,7 +43,7 @@ const CreateModal = ({ sendDataToParent }) => {
                     </div>
                 </div>
 
-                <button type='submit' className='bg-black text-white float-right rounded-lg text-xl py-1 px-10 mt-8'>Create</button>
+                <button type='submit' disabled={!isFormValid} className='bg-black text-white float-right rounded-lg text-xl py-1 px-10 mt-8'>Create</button>
             </form>
         </div>
   )

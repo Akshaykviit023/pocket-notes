@@ -33,9 +33,9 @@ const ChatTextBox = ( { currentGroup } ) => {
     setMessage(''); 
   };
   return (
-    <div className='fixed bottom-0 w-full bg-[#E8E8E8] p-4'>
+    <div className='fixed bottom-0 w-full bg-[#E8E8E8] p-4 '>
         <textarea 
-        className='w-[74%] h-[200px] text-3xl outline-none py-5 pl-8 pr-12 resize-none' 
+        className='w-[74%] h-[200px] text-3xl outline-none py-5 pl-8 pr-12 resize-none max-md:w-full max-sm:h-[100px] max-sm:text-base' 
         placeholder='Enter your text here...' 
         value={message}
         onChange={(e) => setMessage(e.target.value)}></textarea>

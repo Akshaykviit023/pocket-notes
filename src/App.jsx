@@ -14,7 +14,7 @@ function App() {
     <>
     <div className='relative'>
     {dataFromChild && (
-        <div className='w-full h-screen bg-[rgba(0,0,0,0.5)] absolute' onClick={() => setDataFromChild(false)}/>
+        <div className='w-full h-screen bg-[rgba(0,0,0,0.5)] absolute z-10' onClick={() => setDataFromChild(false)}/>
       )}
       
       <div className={`flex ${dataFromChild ? " " : ""}`}>

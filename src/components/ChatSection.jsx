@@ -9,7 +9,7 @@ const ChatSection = () => {
     const selectedGroup = useSelector((state) => state.group.selectedGroup);
   return (
     
-    <div className={`w-full bg-[#F7ECDC] h-screen max-md:${selectedGroup ? "w-full" : "hidden"}`}>
+    <div className={`w-full bg-[#F7ECDC] h-screen ${selectedGroup ? '' : 'hidden'} md:block`}>
         {selectedGroup ? (
             <Chat />
         ) : (

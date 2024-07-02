@@ -43,7 +43,7 @@ const CreateModal = ({ sendDataToParent }) => {
                     </div>
                 </div>
 
-                <button type='submit' disabled={!isFormValid} className='bg-black text-white float-right rounded-lg text-xl py-1 px-10 mt-8'>Create</button>
+                <button type='submit' disabled={!isFormValid} className={`bg-black text-white float-right rounded-lg text-xl py-1 px-10 mt-8 ${!isFormValid ? "cursor-not-allowed" : ""}`}>Create</button>
             </form>
         </div>
   )

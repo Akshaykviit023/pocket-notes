@@ -10,7 +10,7 @@ const ChatMain = () => {
   useEffect(() => {
     const groupMessages = existingData[selectedGroup]?.messages || [];
     setMessages(groupMessages);
-  }, [selectedGroup]);
+  }, [selectedGroup, existingData]);
 
   return (
     <div className='mt-28 h-[475px] px-12 py-8  overflow-y-scroll flex flex-col gap-12 max-sm:h-[650px] max-sm:px-8 max-sm:py-4'>

@@ -8,6 +8,7 @@ import Chat from './Chat';
 const ChatSection = () => {
     const selectedGroup = useSelector((state) => state.group.selectedGroup);
   return (
+    
     <div className={`w-full bg-[#F7ECDC] h-screen max-md:${selectedGroup ? "w-full" : "hidden"}`}>
         {selectedGroup ? (
             <Chat />
@@ -24,6 +25,7 @@ const ChatSection = () => {
         
     
 </div>
+
   )
 }
 
